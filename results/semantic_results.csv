@@ -1,0 +1,7 @@
+question_id,student_answer,human_score,semantic_similarity
+1,RSA is a public key encryption technique where two keys are used. One key encrypts the data and the private key decrypts it. It is based on prime numbers.,5.0,0.900933027267456
+2,RSA uses keys to make things secure.,2.0,0.7000839114189148
+3,"Deadlock happens when two or more processes are stuck waiting for each other to release resources, so none of them can finish execution.",5.0,0.8392895460128784
+4,Deadlock is when the computer freezes up and runs out of memory.,1.0,0.7641055583953857
+5,"MVC separates an application into three components: the model for data, the view for the user interface, and the controller that handles user input and logic.",5.0,0.8352999091148376
+6,MVC stands for model view controller and helps write code faster.,2.5,0.7771177887916565

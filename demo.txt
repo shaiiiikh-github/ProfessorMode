@@ -1,0 +1,104 @@
+================================================================================
+PROFESSOR MODE — DEMO SCRIPTS, TEST CASES & VERIFICATION GUIDE
+================================================================================
+
+HOW TO RUN:
+1. Interactive CLI:
+   python main.py
+
+2. Interactive Web Studio (Browser UI):
+   python web_app.py
+   (Navigate to http://localhost:8000)
+
+3. Benchmark Evaluation (TF-IDF vs Semantic vs Professor Mode):
+   python src/evaluation.py
+
+4. Exploratory Data Analysis & Plots:
+   python src/eda.py
+
+5. Run Automated Unit Test Suite:
+   python -m unittest discover -s tests -p "test_*.py"
+
+================================================================================
+TEST CASE 1: Grade A+ (Outstanding Mastery & Exemplary Paraphrasing)
+================================================================================
+Question:
+Explain the working of RSA encryption.
+
+Reference Answer:
+RSA is an asymmetric cryptographic algorithm that uses a public key for encryption and a private key for decryption. It relies on the mathematical difficulty of factoring the product of two large prime numbers.
+
+Student Answer:
+RSA is a public key encryption technique where two distinct keys are used. One public key encrypts the data and the corresponding private key decrypts it. The fundamental security relies on the prime factor calculation difficulty of large integers.
+
+Expected Quality Result:
+- Final Score: ~88 - 93 / 100 (Grade: A / A+)
+- Semantic Alignment: ~82 - 86 / 100
+- Concept Coverage: 100% (Identified RSA, asymmetric algorithm, public key, private key, encryption, decryption, prime numbers)
+- Redundancy Level: Low
+
+================================================================================
+TEST CASE 2: Grade C/D (Developing / Critical Conceptual Gaps)
+================================================================================
+Question:
+Explain the working of RSA encryption.
+
+Reference Answer:
+RSA is an asymmetric cryptographic algorithm that uses a public key for encryption and a private key for decryption. It relies on the mathematical difficulty of factoring the product of two large prime numbers.
+
+Student Answer:
+RSA uses keys to make things secure on websites and computer networks.
+
+Expected Quality Result:
+- Final Score: ~45 - 55 / 100 (Grade: D / C)
+- Semantic Alignment: ~38 - 45 / 100
+- Concept Coverage: ~20 - 30% (Missing: asymmetric, public key, private key, encryption, decryption, prime numbers)
+- Actionable Feedback: Flags missing concepts and recommends incorporating mathematical definitions.
+
+================================================================================
+TEST CASE 3: Operating Systems — Deadlock Detection & Characterization
+================================================================================
+Question:
+What is a deadlock in operating systems?
+
+Reference Answer:
+Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process in the set, leading to a circular wait condition.
+
+Student Answer:
+Deadlock occurs when two or more processes are permanently stuck waiting for resources held by each other, causing a circular waiting chain where none of them can proceed.
+
+Expected Quality Result:
+- Final Score: ~85 - 90 / 100 (Grade: A)
+- Key Covered: processes, resources, circular wait, blocked execution.
+
+================================================================================
+TEST CASE 4: Software Architecture — Model-View-Controller (MVC)
+================================================================================
+Question:
+Describe the Model-View-Controller (MVC) architecture.
+
+Reference Answer:
+MVC is a software architectural pattern consisting of three parts: Model (manages data and business logic), View (handles UI display), and Controller (acts as an interface between Model and View).
+
+Student Answer:
+MVC separates an application into three distinct layers: the Model layer which encapsulates data and business logic, the View which handles visual UI rendering, and the Controller that routes user requests and coordinates updates between Model and View.
+
+Expected Quality Result:
+- Final Score: ~90 - 95 / 100 (Grade: A+)
+- Lexical & Semantic alignment: Very high, structured with discourse transitions.
+
+================================================================================
+TEST CASE 5: Database Systems — Relational Normalization
+================================================================================
+Question:
+What is database normalization and why is it used?
+
+Reference Answer:
+Normalization is the process of structuring a relational database to reduce data redundancy and improve data integrity by organizing tables and columns into normal forms.
+
+Student Answer:
+Normalization is when database tables are created to put lots of records in columns so you can look them up later.
+
+Expected Quality Result:
+- Final Score: ~35 - 45 / 100 (Grade: F / D)
+- Missing Concepts: data redundancy, data integrity, normal forms.

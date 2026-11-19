@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfessorMode — Academic Assessment Audit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto space-y-6">
+        
+        <!-- Header -->
+        <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+            <div>
+                <div class="flex items-center space-x-2.5 mb-2">
+                    <span class="px-2.5 py-0.5 bg-slate-900 text-white rounded text-xs font-mono font-bold tracking-wider">PM-AUDIT</span>
+                    <span class="text-xs text-slate-400 font-mono">ID: A-2026</span>
+                </div>
+                <h1 class="text-2xl font-bold tracking-tight text-slate-900">Academic Answer Quality Audit</h1>
+                <p class="text-slate-500 text-xs mt-1">Multi-Dimensional Natural Language Processing Evaluation Report</p>
+            </div>
+            
+            <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 text-center min-w-[150px]">
+                <div class="text-4xl font-extrabold text-slate-900 mono">81.41</div>
+                <div class="text-xs font-mono font-bold text-slate-500 uppercase tracking-wider mt-1">A &bull; Excellent</div>
+            </div>
+        </div>
+
+        <!-- Prompts & Submission Card -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-4">
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Examination Prompt / Question</h3>
+                <p class="text-slate-900 text-sm font-medium bg-slate-50 p-3 rounded-lg border border-slate-100">What is database normalization and why is it used?</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Student Submitted Response</h3>
+                    <div class="text-xs text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-200 h-full leading-relaxed">Normalization organizes database relations to eliminate repetitive data and guard against insertion or deletion anomalies, preserving relational integrity across tables.</div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Instructor Benchmark Solution</h3>
+                    <div class="text-xs text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-200 h-full leading-relaxed">Normalization is the process of structuring a relational database to reduce data redundancy and improve data integrity by organizing tables and columns into normal forms.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicator Metrics Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <span class="text-xs font-medium text-slate-500 uppercase">Semantic Alignment</span>
+                <div class="text-xl font-bold text-slate-900 mono mt-1">87.74%</div>
+                <div class="w-full bg-slate-100 h-1.5 rounded-full mt-2 overflow-hidden">
+                    <div class="bg-slate-900 h-full rounded-full" style="width: 87.74%"></div>
+                </div>
+                <span class="text-[11px] text-slate-400 mt-1 block">Weight: 35%</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <span class="text-xs font-medium text-slate-500 uppercase">Concept Coverage</span>
+                <div class="text-xl font-bold text-slate-900 mono mt-1">75%</div>
+                <div class="w-full bg-slate-100 h-1.5 rounded-full mt-2 overflow-hidden">
+                    <div class="bg-slate-900 h-full rounded-full" style="width: 75%"></div>
+                </div>
+                <span class="text-[11px] text-slate-400 mt-1 block">Weight: 30%</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <span class="text-xs font-medium text-slate-500 uppercase">Structural Health</span>
+                <div class="text-xl font-bold text-slate-900 mono mt-1">66%</div>
+                <div class="w-full bg-slate-100 h-1.5 rounded-full mt-2 overflow-hidden">
+                    <div class="bg-slate-900 h-full rounded-full" style="width: 66%"></div>
+                </div>
+                <span class="text-[11px] text-slate-400 mt-1 block">Weight: 20%</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <span class="text-xs font-medium text-slate-500 uppercase">Conciseness</span>
+                <div class="text-xl font-bold text-slate-900 mono mt-1">100%</div>
+                <div class="w-full bg-slate-100 h-1.5 rounded-full mt-2 overflow-hidden">
+                    <div class="bg-slate-900 h-full rounded-full" style="width: 100%"></div>
+                </div>
+                <span class="text-[11px] text-slate-400 mt-1 block">Level: Low</span>
+            </div>
+        </div>
+
+        <!-- Concept Breakdown Table -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-3">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700">
+                Academic Concept Verification Audit
+            </h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 text-slate-400 uppercase font-semibold text-[11px]">
+                            <th class="py-2.5 px-3">Target Concept</th>
+                            <th class="py-2.5 px-3">Status</th>
+                            <th class="py-2.5 px-3">Linguistic Evidence / Student Context</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">normalization</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Exact Match</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"Normalization organizes database relations to eliminate repetitive data and guard against insertion or deletion anomalies, preserving relational integrity across tables."</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">relational database</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Partial Keyword Match</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"Normalization organizes database relations to eliminate repetitive data and guard against insertion or deletion anomalies, preserving relational integrity across tables."</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">data redundancy</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Semantic Paraphrase</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"repetitive data"</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">data integrity</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Semantic Paraphrase</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"relational integrity"</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">tables</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Exact Match</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"Normalization organizes database relations to eliminate repetitive data and guard against insertion or deletion anomalies, preserving relational integrity across tables."</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-emerald-50/50">
+            <td class="py-2.5 px-3 font-semibold text-emerald-800">columns</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-emerald-100 text-emerald-800">Semantic Paraphrase</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-600 italic">"tables"</td>
+        </tr>
+        
+                        
+        <tr class="border-b border-gray-100 hover:bg-rose-50/50">
+            <td class="py-2.5 px-3 font-semibold text-rose-800">process</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-100 text-rose-800">Missing</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-500">Closest detected match (0.28): "deletion"</td>
+        </tr>
+        
+        <tr class="border-b border-gray-100 hover:bg-rose-50/50">
+            <td class="py-2.5 px-3 font-semibold text-rose-800">normal forms</td>
+            <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-100 text-rose-800">Missing</span></td>
+            <td class="py-2.5 px-3 text-xs text-gray-500">Closest detected match (0.47): "normalization"</td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Formative Feedback Cards -->
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-white rounded-xl p-5 border border-slate-200 space-y-2">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-800">
+                    Demonstrated Competencies
+                </h4>
+                <ul class="space-y-1.5 text-xs text-slate-700"><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-emerald-500 font-bold'>✓</span><span>High semantic alignment (87.74/100) with the model answer.</span></li><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-emerald-500 font-bold'>✓</span><span>Exemplary concept coverage: identified 6/8 expected technical concepts.</span></li><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-emerald-500 font-bold'>✓</span><span>High information density with virtually zero filler or duplicate statements.</span></li></ul>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 border border-slate-200 space-y-2">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-rose-800">
+                    Identified Concept Gaps
+                </h4>
+                <ul class="space-y-1.5 text-xs text-slate-700"><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-rose-500 font-bold'>✗</span><span>Very high linguistic density; consider breaking complex compound sentences into clearer assertions.</span></li></ul>
+            </div>
+
+            <div class="bg-white rounded-xl p-5 border border-slate-200 space-y-2">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-amber-800">
+                    Actionable Next Steps
+                </h4>
+                <ul class="space-y-1.5 text-xs text-slate-700"><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-amber-500 font-bold'>→</span><span>Ensure to explicitly incorporate and define missing key concepts: 'process', 'normal forms'.</span></li><li class='text-sm text-gray-700 flex items-start space-x-2'><span class='text-amber-500 font-bold'>→</span><span>Include a concrete example or practical application (e.g. using 'for example...') to elevate your response.</span></li></ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-xs text-slate-400 py-2">
+            Generated by ProfessorMode Deterministic Academic NLP &bull; Words: 20 &bull; Sentences: 1 &bull; Flesch Index: 0
+        </div>
+    </div>
+</body>
+</html>
